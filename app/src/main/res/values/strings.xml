@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ExamenFinalProgra2</string>
+    <string name="txt_id">Id</string>
+    <string name="txt_placa">Placa</string>
+
+    <string name="botonCrearT">Crear</string>
+    <string name="botonLeerT">Leer</string>
+    <string name="botonUpdateT">Actualizar</string>
+    <string name="botonDeleteT">Eliminar</string>
+    <string name="botonLimpiarT">Limpiar</string>
+    <string name="botonSalirT">Salir</string>
+</resources>

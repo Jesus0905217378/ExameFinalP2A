@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pantalla2">
+
+    <Button
+        android:id="@+id/botonSalirT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="28dp"
+        android:onClick="Salir"
+        android:text="@string/botonSalirT"
+        app:layout_constraintBottom_toBottomOf="@+id/botonLimpiarT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botonLimpiarT"
+        app:layout_constraintTop_toTopOf="@+id/botonLimpiarT"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botonLimpiarT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="Limpia"
+        android:text="@string/botonLimpiarT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonSalirT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonUpdateT"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botonLeerT"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="78dp"
+        android:onClick="Buscar"
+        android:text="@string/botonLeerT"
+        app:layout_constraintBottom_toTopOf="@+id/botonSalirT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botonCrearT"
+        app:layout_constraintTop_toTopOf="@+id/txt_telefono"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txt_placa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/txt_placa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:inputType="textUri|textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txt_marca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_id"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/txt_marca"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modelo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_placa"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/txt_modelo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txt_piloto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_marca"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/txt_piloto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txt_telefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_modelo"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/txt_telefono"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/botonCrearT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_piloto"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/botonCrearT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="14dp"
+        android:onClick="insert"
+        android:text="@string/botonCrearT"
+        app:layout_constraintBottom_toTopOf="@+id/botonUpdateT"
+        app:layout_constraintEnd_toStartOf="@+id/botonLeerT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_telefono"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_id"
+        app:layout_constraintStart_toStartOf="@+id/txt_id"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Placa"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_placa"
+        app:layout_constraintStart_toStartOf="@+id/txt_id"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="Marca"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_marca"
+        app:layout_constraintStart_toStartOf="@+id/txt_placa"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="Modelo"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modelo"
+        app:layout_constraintStart_toStartOf="@+id/txt_marca"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Teléfono"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_telefono"
+        app:layout_constraintStart_toStartOf="@+id/txt_telefono"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Piloto"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_piloto"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botonUpdateT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/botonUpdateT"
+        app:layout_constraintBottom_toTopOf="@+id/botonLimpiarT"
+        app:layout_constraintEnd_toStartOf="@+id/botonDeleteT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonCrearT"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botonDeleteT"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="67dp"
+        android:text="@string/botonDeleteT"
+        app:layout_constraintBottom_toBottomOf="@+id/botonSalirT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botonUpdateT"
+        app:layout_constraintTop_toTopOf="@+id/botonCrearT"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="25dp"
+        android:text="TAXIS"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
